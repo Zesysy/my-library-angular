@@ -76,10 +76,10 @@ export class BooksService {
       upload.on(
         firebase.storage.TaskEvent.STATE_CHANGED,
         () => {
-          console.log('Chargement...');
+          console.log('Chargement…');
         },
         (error) => {
-          console.log('Erreur de chargement : ' + error);
+          console.log('Erreur de chargement ! : ' + error);
           reject();
         },
         () => {
